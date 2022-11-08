@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) throws InterruptedException {
 
         // webdriver setup
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\CODOID\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
+        System.setProperty("webdriver.actions.driver", "C:\\Users\\CODOID\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.get("https://www.netflix.com/");
@@ -59,5 +59,6 @@ public class Main {
             System.out.println(all.get(i).getText());
         }
         driver.quit();
+
     }
 }
