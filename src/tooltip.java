@@ -14,7 +14,7 @@ public class tooltip {
         tip.moveToElement(ttip.findElement(By.xpath("//a[text()='Hover over me']"))).perform();
         String data = ttip.findElement(By.xpath("//div[@class=\"tooltip-inner\"]")).getText();
         System.out.println(data);
-        ttip.close();
+         ttip.close();
 
     }
 }
