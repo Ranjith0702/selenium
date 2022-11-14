@@ -1,6 +1,7 @@
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 
 
@@ -13,8 +14,8 @@ class intrfce implements face1 {
         in.close();
     }
     public void power() {
-        System.setProperty("webdriver.chrome.driver", "C:\\Users\\CODOID\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
-        WebDriver in = new ChromeDriver();
+        System.setProperty("webdriver.edge.driver", "C:\\Users\\CODOID\\Downloads\\edgedriver_win64\\msedgedriver.exe");
+        WebDriver in = new EdgeDriver();
         in.manage().window().maximize();
         in.get("https://www.netflix.com/");
         in.close();

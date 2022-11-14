@@ -12,8 +12,8 @@ public class dropdown {
     public static void main(String[] args) {
         System.setProperty("webdriver.chrome.driver", "C:\\Users\\CODOID\\Downloads\\chromedriver_win32 (1)\\chromedriver.exe");
         WebDriver dropd = new ChromeDriver();
-        dropd.get("https://demoqa.com/select-menu");
         dropd.manage().window().maximize();
+        dropd.get("https://demoqa.com/select-menu");
         Select select = new Select(dropd.findElement(By.id("oldSelectMenu")));
 
         List<WebElement> lst = select.getOptions();
